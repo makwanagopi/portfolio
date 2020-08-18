@@ -205,11 +205,11 @@
 
             <div class="contact_container bd-grid">
                 <form action="" class="contact_form">
-                    <input type="text" placeholder="Name" class="contact_input">
-                    <input type="text" placeholder="Email" class="contact_input">
-                    <textarea name="" id=""  placeholder="Your Message ..... " class="contact_input"></textarea>
+                    <input type="text" id ="NAME" placeholder="Name" class="contact_input">
+                    <input type="text" id="EMAIL"placeholder="Email" class="contact_input">
+                    <textarea name="" col="0" rows="10" id="MESSAGE"  placeholder="Your Message ..... " class="contact_input"></textarea>
 
-                    <input type="button" value="Send" class="contact_button button">
+                    <input type="button" onclick="showAlert()" value="Send" class="contact_button button">
                 </form>
             </div>
         </section>
@@ -226,5 +226,13 @@
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function showAlert() {
+            var emoji ="😊";
+           
+          var myText = "Your message is sent,Thank you for your responce ";
+          alert (myText + emoji);
+        }
+    </script>
 </body>
 </html>
